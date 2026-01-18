@@ -1,3 +1,95 @@
 /* Your Styles Here */
-body{
+
+/* applies to everything */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* page background */
+body {
+    min-height: 100vh;
+    background: #829984;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card container */
+.card {
+    background: white;
+    width: 720px;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Profile pic */
+.avatar {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* Name */
+.name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* Info */
+.college {
+    font-size: 15px;
+    color: #3C7340;
+    margin-bottom: 18px;
+}
+
+/* Bio */
+.passion {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Location */
+.location {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+/* Buttons */
+.buttons {
+    gap: 12px;
+    display: flex;
+}
+
+/* Button design */
+.btn {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: #3C7340;
+    color: white;
+}
+
+/* Hover animation */
+.btn:hover {
+    transform: translateY(-3px);
+    background: #2f5f33;
 }
